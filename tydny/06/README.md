@@ -17,4 +17,4 @@ Notebook obsahuje zadání, kód, uložené výstupy a vyplněné odpovědi. Str
 
 ## Původ
 
-Zkopírováno ze složky `C:\Users\Radek\Downloads\ai6-xdvora20`. Notebook je v `cviceni/`, všech sedm Python souborů je v `cviceni/strategies/` podle importů v notebooku. Zdrojová složka zůstává zachována.
+Podklady jsou uložené ve složce [cviceni/](cviceni/). Notebook je v `cviceni/`, všech sedm Python souborů je v `cviceni/strategies/` podle importů v notebooku. Zdrojová složka zůstává zachována.

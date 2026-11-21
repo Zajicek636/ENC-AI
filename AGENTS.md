@@ -5,6 +5,7 @@
 Repozitář slouží pro průběžnou práci na předmětu ENC-AI a přípravu na zkoušku. Výchozím rozcestníkem je [README.md](README.md), seznam týdnů je v [tydny/README.md](tydny/README.md).
 
 - Materiály organizuj do `tydny/NN/prednaska/`, `tydny/NN/cviceni/` a `zkouska/`.
+- Přednášky zařazuj podle čísla lekce, cvičení podle čísla cvičení nebo výslovného určení uživatele. Stejné číslo neznamená stejné téma ani potvrzené datum výuky; materiály kvůli tematické podobnosti nepřesouvej. V rozcestnících uváděj téma přednášky a cvičení zvlášť a souvislosti propojuj odkazy.
 - Nové týdny vytvářej až při dodání podkladů; nevymýšlej počet týdnů, jejich témata ani data výuky.
 - Dokumentaci piš česky v UTF-8. Nové organizační cesty pojmenovávej bez diakritiky; původní názvy podkladů zachovej.
 - Před prací v konkrétním týdnu přečti také jeho `AGENTS.md`. Místní pokyny doplňují tato obecná pravidla.

@@ -43,4 +43,4 @@ Notebook požaduje odevzdat vyplněný soubor `.ipynb` a vlastní modul `strateg
 
 ## Původ
 
-Zdrojová složka: `C:\Users\Radek\Downloads\ai6-xdvora20`. Notebook byl zkopírován do této složky, Python moduly do `strategies/` podle importů v notebooku. Originály zůstaly zachované; toto shrnutí je nová dokumentace.
+Podklady jsou uložené ve [složce cvičení](./). Notebook byl zkopírován do této složky, Python moduly do `strategies/` podle importů v notebooku. Originály zůstaly zachované; toto shrnutí je nová dokumentace.

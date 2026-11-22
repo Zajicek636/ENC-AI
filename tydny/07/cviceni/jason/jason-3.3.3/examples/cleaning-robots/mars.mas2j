@@ -1,9 +1,10 @@
-// Implementation of the example described in chapter 2
-// of the Jason's manual
-
 MAS mars {
-
     environment: MarsEnv
 
-    agents: r1; r2;
+    agents:
+        r1        [beliefs="last_row(2)"];
+        r2;
+        r3 r2.asl;
+        r4 r1.asl [beliefs="last_row(4)"];
+        r5 r1.asl [beliefs="last_row(6)"];
 }

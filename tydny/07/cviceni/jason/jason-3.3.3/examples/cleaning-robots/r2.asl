@@ -1,3 +1,5 @@
-// mars robot 2
+// Both incinerators run this program.
++garbage(Me) : .my_name(Me) <- !empty(Me).
 
-+garbage(r2) : true <- burn(garb).
++!empty(Me) : garbage(Me) <- burn(garb); !empty(Me).
++!empty(_).

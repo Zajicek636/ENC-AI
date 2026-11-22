@@ -1,49 +1,29 @@
-// mars robot 1
+// move_towards can change both coordinates in one step.
+distance_to(R,X,Y,D) :- pos(R,RX,RY) & D = math.max(math.abs(RX-X),math.abs(RY-Y)).
 
-/* Initial beliefs */
+!start.
 
-at(P) :- pos(P,X,Y) & pos(r1,X,Y).
++!start <- .my_name(Me); !check(Me).
 
-/* Initial goal */
++!check(Me) : pos(Me,X,Y)
+    <- if (garbage(Me)) {
+           !pick_up(Me);
+           ?distance_to(r2,X,Y,D2);
+           ?distance_to(r3,X,Y,D3);
+           if (D2 <= D3) { !deliver(Me,r2) } else { !deliver(Me,r3) };
+           !go_to(Me,X,Y)
+       };
+       if (X == 6 & last_row(Y)) {
+           .print("Patrol complete")
+       } else {
+           next(slot);
+           !check(Me)
+       }.
 
-!check(slots).
++!pick_up(Me) : carrying(Me).
++!pick_up(Me) : garbage(Me) <- pick(garb); !pick_up(Me).
 
-/* Plans */
++!deliver(Me,R) : pos(R,X,Y) <- !go_to(Me,X,Y); drop(garb).
 
-+!check(slots) : not garbage(r1)
-   <- next(slot);
-      !check(slots).
-
-
-+garbage(r1) : not .desire(carry_to(r2))
-   <- !carry_to(r2).
-
-+!carry_to(R)
-   <- .drop_desire(check(slots)); // stop checking
-      
-      // remember where to go back
-      ?pos(r1,X,Y);
-      -+pos(last,X,Y);
-
-      // carry garbage to r2
-      !take(garb,R);
-
-      // goes back and continue to check
-      !at(last);
-      !!check(slots).
-
-
-+!take(S,L)
-   <- !ensure_pick(S);
-      !at(L);
-      drop(S).
-
-+!ensure_pick(S) : garbage(r1)
-   <- pick(garb);
-      !ensure_pick(S).
-+!ensure_pick(_).
-
-+!at(L) : at(L).
-+!at(L) <- ?pos(L,X,Y);
-           move_towards(X,Y);
-           !at(L).
++!go_to(Me,X,Y) : pos(Me,X,Y).
++!go_to(Me,X,Y) <- move_towards(X,Y); !go_to(Me,X,Y).

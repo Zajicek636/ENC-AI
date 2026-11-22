@@ -156,17 +156,38 @@ Aplikujte nabyté znalosti úpravou projektu `cleaning-robots`. Upravujte kódy 
 ## Závěrečný blok
 
 ### Kontrolní seznam dokončení
-- [ ] jEdit je spuštěn a cesty k `jason.jar` a `ant-libs` jsou korektně nastaveny.
-- [ ] Původní projekt `cleaning-robots` úspěšně zkompiloval a proběhla vizualizace.
-- [ ] Jsou identifikovány a pochopeny metody `init`, `executeAction` a `updatePercepts` v Javě.
-- [ ] Jsou úspěšně implementovány úpravy chování robotů (přidání spalovače, optimalizace cesty).
+- [x] jEdit je spuštěn a cesty k `jason.jar` a `ant-libs` jsou korektně nastaveny.
+
+````aiignore
+$jason = "$env:LOCALAPPDATA\Jason\3.3.3"
+New-Item -ItemType Directory -Force -Path $jason | Out-Null
+Copy-Item "$env:TEMP\enc07-fbc358a84ee84c8aae466f0a982dc6a4\*.jar" $jason
+
+Set-Location 'D:\ENC-AI\tydny\07\cviceni\jason\jason-3.3.3\examples\cleaning-robots'
+
+$jdk = 'C:\Program Files\JetBrains\CLion 2025.2.3\jbr\bin'
+$jason = "$env:LOCALAPPDATA\Jason\3.3.3"
+
+& "$jdk\javac.exe" -cp "$jason\*" -d $jason MarsEnv.java
+if ($LASTEXITCODE -eq 0) {
+    & "$jdk\java.exe" -cp "$jason;$jason\*" jason.infra.local.RunLocalMAS mars.mas2j
+}
+````
+
+- [x] Původní projekt `cleaning-robots` úspěšně zkompiloval a proběhla vizualizace.
+- [x] Jsou identifikovány a pochopeny metody `init`, `executeAction` a `updatePercepts` v Javě.
+- [x] Jsou úspěšně implementovány úpravy chování robotů (přidání spalovače, optimalizace cesty).
 
 ### Závěrečné otázky
 1. Jak interpret Jason odlišuje volání akcí poskytovaných prostředím od interních akcí agenta? Jaký syntaktický znak k tomu využívá?
+*  Interní akce začíná tečkou, například .my_name(Me). Akce prostředí se zapisuje bez tečky, například pick(garb).
 2. K čemu přesně slouží kontext plánu a co se stane, pokud kontext v době aktivace triggeru (např. přidání cíle) není splněn?
+*  Kontext určuje, jestli agent může plán při dané události použít. Pokud podmínka neplatí, Jason plán přeskočí a hledá jiný použitelný plán pro stejnou událost.
 3. Jaký je rozdíl mezi dotazovacím plánem (spuštěným znakem `?`) a prostým ověřením přesvědčení v kontextu?
+*  V kontextu agent ověří, co už ví nebo dokáže odvodit z pravidel. Pokud takto nezíská odpověď na dotaz ?p(X), může spustit plán s triggerem +?p(X) a potřebnou informaci zjistit dalšími akcemi.
 
 ### Krátká sebereflexe
-Zamyslete se nad tím, co pro vás bylo při přechodu z procedurálního Pythonu na logický a agentní přístup AgentSpeaku nejobtížnější. 
+Zamyslete se nad tím, co pro vás bylo při přechodu z procedurálního Pythonu na logický a agentní přístup AgentSpeaku nejobtížnější.
+* U sběru odpadu jsem si musel rozlišit provedení akce pick(garb) a její výsledek. Robot může vyjet ke spalovači až ve chvíli, kdy má potvrzené carrying(Me).
 
 Zapište si zjištění do vlastních poznámek pro snazší přípravu k zápočtu.

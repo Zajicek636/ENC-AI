@@ -17,6 +17,7 @@ Pracovní a informační prostor pro předmět ENC-AI: podklady z přednášek, 
 | [04](tydny/04/README.md) | [Rozhodování, plánování a BFS/DFS](tydny/04/prednaska/SHRNUTI.md); PDF, 59 stran | [Multiagentní architektury a ReAct](tydny/04/cviceni/SHRNUTI.md); vyplněný pracovní list, simulovaný log a [výtah teorie](tydny/04/prednaska/TEORIE.md) |
 | [05](tydny/05/README.md) | Přednáška nedodána; [teorie odvozená ze cvičení](tydny/05/prednaska/TEORIE.md) | [Vacuum World 3×3](tydny/05/cviceni/SHRNUTI.md); základní úkoly vyplněny, výzva A nevyplněna |
 | [06](tydny/06/README.md) | Přednáška nedodána; [teorie odvozená ze cvičení](tydny/06/prednaska/TEORIE.md) | [Iterované vězňovo dilema a evoluční strategie](tydny/06/cviceni/SHRNUTI.md); notebook a Python moduly |
+| [07](tydny/07/README.md) | Přednáška nedodána. K dispozici je [výtah ze cvičení](tydny/07/prednaska/TEORIE.md). | [BDI agenti v AgentSpeaku a Jasonu](tydny/07/cviceni/SHRNUTI.md) (pracovní list se zadáním) |
 
 Přednášky a cvičení řadíme podle jejich vlastních čísel; jejich témata se ve stejném řádku nemusí shodovat. Tematicky souvisejí přednáška 01 a cvičení 03, přednáška 02 a cvičení 04, přednáška 03 a cvičení 05. Souhrn přednášek ke zkoušce je dostupný jako [Markdown](<zkouska/Cviko 1.md>) a [PDF](<zkouska/Cviko 1.pdf>).
 

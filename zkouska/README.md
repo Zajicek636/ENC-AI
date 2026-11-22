@@ -20,7 +20,7 @@ Navzdory názvu obsahuje souhrn části „Cviko 1“ až „Cviko 5“ a uživa
 | 03 | [Agenti, prostředí a formulace problému](../tydny/03/prednaska/SHRNUTI.md) | [PDF, 43 stran](../tydny/03/prednaska/Lekce_03-Uvod_do_agentu_a_Vlastnosti_prostredi.pdf) |
 | 04 | [Rozhodování, plánování a BFS/DFS](../tydny/04/prednaska/SHRNUTI.md) | [PDF, 59 stran](../tydny/04/prednaska/2026_Lekce_04_Agent_Decision_Making.pdf) |
 
-Přednášky 05 a 06 nebyly dodány. Označení lekcí a cvičení se řídí jejich čísly, nikoli tematickou shodou. Organizační údaje o projektu a zápočtu jsou oddělené ve shrnutích lekcí 03 a 04; neprokazují osobní splnění povinností ani termín závěrečné zkoušky.
+Přednášky 05–07 nebyly dodány. Označení lekcí a cvičení se řídí jejich čísly, nikoli tematickou shodou. Organizační údaje o projektu a zápočtu jsou oddělené ve shrnutích lekcí 03 a 04; neprokazují osobní splnění povinností ani termín závěrečné zkoušky.
 
 ## Výtahy a podklady ze cvičení
 
@@ -34,6 +34,8 @@ Přednášky 05 a 06 nebyly dodány. Označení lekcí a cvičení se řídí je
 | Vacuum World 3×3 | [Shrnutí cvičení 5](../tydny/05/cviceni/SHRNUTI.md) | Dodaný notebook; základní úkoly vyplněny, výzva A nevyplněna |
 | Vězňovo dilema, strategie a evoluční simulace | [Teorie a otázky k zopakování](../tydny/06/prednaska/TEORIE.md) | Výtah ze cvičení 6 s označeným doplňujícím vysvětlením |
 | Praktická práce se strategiemi | [Shrnutí cvičení 6](../tydny/06/cviceni/SHRNUTI.md) | Dodaný notebook a Python moduly |
+| BDI, vjemy a plány v AgentSpeaku | [Výtah teorie](../tydny/07/prednaska/TEORIE.md) | Výtah ze cvičení 7 s upřesněním syntaxe plánů |
+| Úklidoví a spalovací roboti v Jasonu | [Shrnutí cvičení 7](../tydny/07/cviceni/SHRNUTI.md) | Pracovní list se zadáním |
 
 Tyto odkazy nejsou seznamem oficiálních zkouškových okruhů. Materiály k týdnům zůstávají na svém místě, aby se nekopírovaly do několika nejednotných verzí.
 
